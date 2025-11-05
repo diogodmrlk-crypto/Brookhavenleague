@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Campeões - Brookhaven</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="menu-icon" id="menuIconCam"><div></div><div></div><div></div></div>
+    <div class="logo"><img src="brook.png" alt="Logo" height="40"></div>
+    <div style="width:48px;"></div>
+  </header>
+
+  <nav class="side-menu" id="sideMenuCam">
+    <a href="index.html">← Voltar</a>
+  </nav>
+
+  <main class="hero">
+    <h1>Campeões</h1>
+    <p> 1 - ARAUJO FC </p>
+    <p> 2 - ATLETICO MINEIRO <p>
+
+    <!-- container para sua lista: cole itens aqui -->
+    <div id="listaCampeoes" style="max-width:900px; width:100%; margin:20px auto; color:#eee; text-align:left; padding:10px;">
+      <!-- Exemplo:
+      <div class="campeao-item">1. JogadorX — Temporada 1 — Time A</div>
+      -->
+    </div>
+  </main>
+
+  <script>
+    // menu lateral simples para esta página
+    const menuIconCam = document.getElementById('menuIconCam');
+    const sideMenuCam = document.getElementById('sideMenuCam');
+    menuIconCam?.addEventListener('click', ()=> sideMenuCam.classList.toggle('open'));
+    document.addEventListener('click', (e)=> { if(!sideMenuCam.contains(e.target) && !menuIconCam.contains(e.target)) sideMenuCam.classList.remove('open'); });
+  </script>
+</body>
+</html>
