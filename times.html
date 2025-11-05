@@ -1,0 +1,40 @@
+https://discord.gg/ZFTUVD836A<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Times - Brookhaven</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="menu-icon" id="menuIconTime"><div></div><div></div><div></div></div>
+    <div class="logo"><img src="brook.png" alt="Logo" height="40"></div>
+    <div style="width:48px;"></div>
+  </header>
+
+  <nav class="side-menu" id="sideMenuTime">
+    <a href="index.html">← Voltar</a>
+  </nav>
+
+  <main class="hero">
+    <h1>Times</h1>
+    <p>FLAMENGO FUTEBOL CLUBE - FLA</p>
+    <p>MANCHESTER CITY - MCI</p>
+    <p>ARSENAL - ARS</p>
+    <p>INTERNAZIONALE DE MILAO - IDM</p>
+    <div id="listaTimes" style="max-width:900px; width:100%; margin:20px auto; color:#eee; text-align:left; padding:10px;">
+      <!-- Exemplo:
+      <div class="time-item">Time A — Capitão: JogadorX — Cidade</div>
+      -->
+    </div>
+  </main>
+
+  <script>
+    const menuIconTime = document.getElementById('menuIconTime');
+    const sideMenuTime = document.getElementById('sideMenuTime');
+    menuIconTime?.addEventListener('click', ()=> sideMenuTime.classList.toggle('open'));
+    document.addEventListener('click', (e)=> { if(!sideMenuTime.contains(e.target) && !menuIconTime.contains(e.target)) sideMenuTime.classList.remove('open'); });
+  </script>
+</body>
+</html>
