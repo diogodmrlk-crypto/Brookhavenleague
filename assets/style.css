@@ -1,0 +1,112 @@
+/* reset mínimo */
+* { box-sizing: border-box; }
+
+/* Fundo */
+body {
+  margin: 0;
+  background: url("../fundo.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.65);
+  z-index: 0;
+}
+
+header, main { position: relative; z-index: 1; }
+
+/* top bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* menu icon (hamburger) */
+.menu-icon {
+  display: flex; flex-direction: column; justify-content: space-between;
+  width: 28px; height: 20px; cursor: pointer;
+}
+.menu-icon div { height: 3px; background-color: white; border-radius: 2px; }
+
+/* logo */
+.logo img { height: 40px; }
+
+/* idioma */
+.lang { position: relative; cursor: pointer; display: inline-flex; align-items: center; gap:8px; }
+.lang .main-flag { font-size: 20px; }
+.lang-dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  background: rgba(0,0,0,0.9);
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 8px;
+  min-width: 120px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.lang-dropdown .flag-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.lang-dropdown .flag-btn:hover { background: rgba(255,255,255,0.05); }
+.lang.open .lang-dropdown { display: flex; }
+
+/* side menu */
+.side-menu {
+  position: fixed;
+  top: 0; left: -230px;
+  width: 230px; height: 100%;
+  background: rgba(0,0,0,0.95);
+  display: flex; flex-direction: column;
+  padding-top: 70px;
+  transition: left 0.28s ease;
+  z-index: 20;
+}
+.side-menu.open { left: 0; }
+.side-menu a {
+  color: white; padding: 14px 18px; text-decoration: none; font-size: 1.05rem;
+}
+.side-menu a:hover { background: rgba(255,255,255,0.04); }
+
+/* hero */
+.hero {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 78vh; padding: 30px 20px;
+}
+.hero h2 { color: rebeccapurple; letter-spacing: 1px; margin: 0 0 8px 0; }
+.hero h1 { font-size: 3rem; margin: 8px 0; }
+.hero p { max-width: 600px; margin: 10px auto 24px; color: #ddd; padding: 0 10px; }
+
+/* controls row (botão + players) */
+.controls { display:flex; gap:18px; align-items:center; justify-content:center; flex-wrap:wrap; }
+.play-btn {
+  background-color: purple; color: white; padding: 14px 26px; border-radius: 6px;
+  font-size: 1.05rem; text-decoration: none; transition: background 0.25s;
+}
+.play-btn:hover { background-color: rebeccapurple; }
+.players { font-weight: bold; font-size: 18px; color: #fff; }
+
+/* responsivo */
+@media (max-width:600px) {
+  .hero h1 { font-size: 2.2rem; }
+  .side-menu { width: 200px; }
+}
