@@ -42,28 +42,29 @@ const i18n = {
   pt: {
     'menu.campeoes': '🏆 Campeões',
     'menu.times': '⚽ Times',
+    'menu.brook': '🏆 🏆 Brook league',
     'hero.subtitle': 'O MELHOR E MAIS COMPLETO SERVIDOR DE',
-    'hero.highlight': 'BATTLE',
-    'hero.title': 'ROYALE!',
-    'hero.description': 'Alcance o auge da competição e enfrente os melhores jogadores no mais épico Battle Royale de todos os tempos!',
+    'hero.highlight': 'BROOKHAVEN',
+    'hero.title': 'LEAGUE!',
+    'hero.description': 'Alcance o auge da competição e enfrente os melhores jogadores na mais épica Liga de todos os tempos!',
     'hero.play': 'JOGUE AGORA'
   },
   en: {
     'menu.campeoes': '🏆 Champions',
     'menu.times': '⚽ Teams',
     'hero.subtitle': 'THE LARGEST AND MOST COMPLETE SERVER OF',
-    'hero.highlight': 'BATTLE',
-    'hero.title': 'ROYALE!',
-    'hero.description': 'Reach the peak of competition and face the best players in the most epic Battle Royale of all time!',
+    'hero.highlight': 'BROOKHAVEN',
+    'hero.title': 'LEAGUE!',
+    'hero.description': 'Reach the peak of competition and face the best players in the most epic league of all time!',
     'hero.play': 'PLAY NOW'
   },
   es: {
     'menu.campeoes': '🏆 Campeones',
     'menu.times': '⚽ Equipos',
     'hero.subtitle': 'EL SERVIDOR MÁS GRANDE Y COMPLETO DE',
-    'hero.highlight': 'BATTLE',
-    'hero.title': 'ROYALE!',
-    'hero.description': 'Alcanza la cima de la competición y enfrenta a los mejores en el Battle Royale más épico de todos los tiempos!',
+    'hero.highlight': 'BROOKHAVEN',
+    'hero.title': 'LEAGUE!',
+    'hero.description': 'Alcanza la cima de la competición y enfrenta a los mejores en el Liga más épica de todos los tiempos!',
     'hero.play': 'JUGAR AHORA'
   }
 };
