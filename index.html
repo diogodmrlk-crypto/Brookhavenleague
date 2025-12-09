@@ -47,12 +47,39 @@
 
     <div class="controls">
 <a href="https://discord.gg/ZFTUVD836A" target="_blank" class="play-btn" data-i18n="hero.play">
-  JOGUE AGORA
+ DISCORD
 </a>
       <div class="players"><span> ⚽ ️596</span></div>
     </div>
   </main>
 
   <script src="assets/script.js"></script>
+  
+  <!-- Ícone TikTok fixado embaixo -->
+<div class="tiktok-container">
+  <a href="https://www.tiktok.com/@futebolbrookhavenleague?_r=1&_t=ZS-925KzkSR2Ep" target="_blank">
+    <img src="tiktok.png" alt="TikTok" class="tiktok-icon">
+  </a>
+</div>
+
+<style>
+  .tiktok-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+  }
+  
+  .tiktok-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+  
+  .tiktok-icon:hover {
+    transform: scale(1.1);
+  }
+</style>
 </body>
 </html>
