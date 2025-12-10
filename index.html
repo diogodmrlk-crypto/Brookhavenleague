@@ -36,6 +36,10 @@
     <a href="times.html" data-i18n="menu.times">⚽ Times</a>
     
     <a href="brook.html" data-i18n="menu.brook">🏆 Brook league</a>
+    
+    <a href="regras-servidor.html" data-i18n="menu.regras">📄 Regras Servidor</a>
+    
+    <a href="regras-jogo.html" data-i18n="menu.fluxo">🗒 Regras Campeonato</a>
   </nav>
 
   <main class="hero">
@@ -80,6 +84,52 @@
   .tiktok-icon:hover {
     transform: scale(1.1);
   }
+</style
+
+<!-- ❄️ FLOCO DE NEVE ❄️ -->
+<style>
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
 </style>
+
+<script>
+  // Criar flocos de neve infinitos
+  function createSnowflake() {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+    snowflake.textContent = "❄️";
+    
+    // posição horizontal aleatória
+    snowflake.style.left = Math.random() * 100 + "vw";
+    
+    // tamanho aleatório
+    snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
+    
+    // duração da queda
+    snowflake.style.animationDuration = (Math.random() * 5 + 5) + "s";
+    
+    document.body.appendChild(snowflake);
+    
+    // remover depois que cair
+    setTimeout(() => {
+      snowflake.remove();
+    }, 10000);
+  }
+  
+  setInterval(createSnowflake, 200);
+</script>
 </body>
 </html>
