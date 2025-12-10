@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Regras - Brookhaven</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="menu-icon" id="menuIconTime"><div></div><div></div><div></div></div>
+    <div class="logo"><img src="brook.png" alt="Logo" height="40"></div>
+    <div style="width:48px;"></div>
+  </header>
+
+  <nav class="side-menu" id="sideMenuTime">
+    <a href="index.html">← Voltar</a>
+  </nav>
+
+  <main class="hero" style="padding:20px; text-align:left;">
+
+    <h1>📜 REGRAS DO SERVIDOR</h1>
+
+    <div style="max-width:900px; margin:auto; background:#111; padding:20px; border-radius:10px; line-height:1.6; color:#fff;">
+
+      <h2>TÍTULO I – DAS DISPOSIÇÕES GERAIS</h2>
+
+      <p><strong>Art. 1º – Do Respeito</strong><br>
+      I – É obrigatório manter o respeito entre todos os membros.<br>
+      II – Ficam proibidas ofensas, preconceitos, discriminações ou qualquer forma de discurso de ódio.<br>
+      <strong>Penalidade:</strong> Advertência → Mute 1h → Banimento permanente.</p>
+
+      <p><strong>Art. 2º – Do Conteúdo Comprometedor</strong><br>
+      I – É proibido divulgar ou compartilhar conteúdo pornográfico, ilegal ou de violência extrema (gore).<br>
+      <strong>Penalidade:</strong> Banimento imediato.</p>
+
+      <p><strong>Art. 3º – Uso Adequado dos Canais</strong><br>
+      I – Proibido flood, spam e mensagens fora dos canais corretos.<br>
+      <strong>Penalidade:</strong> Advertência → Mute 30min → Kick.</p>
+
+      <p><strong>Art. 4º – Divulgação Não Autorizada</strong><br>
+      I – Proibido divulgar links externos, convites e redes sociais sem autorização.<br>
+      <strong>Penalidade:</strong> Advertência → Kick → Banimento.</p>
+
+      <p><strong>Art. 5º – Nicknames e Avatares</strong><br>
+      I – Nick e avatar devem ser apropriados.<br>
+      II – Proibido nomes ofensivos ou imitar membros da staff.<br>
+      <strong>Penalidade:</strong> Advertência → Mute até troca → Banimento em reincidência.</p>
+
+      <p><strong>Art. 6º – Linguagem Utilizada</strong><br>
+      I – Palavrões excessivos ou ofensivos contra membros são proibidos.<br>
+      <strong>Penalidade:</strong> Advertência → Mute 1h → Kick.</p>
+
+      <p><strong>Art. 7º – Respeito à Staff</strong><br>
+      I – Proibido discutir decisões da staff em público.<br>
+      II – Reclamações devem ser feitas no suporte.<br>
+      <strong>Penalidade:</strong> Advertência → Mute 2h → Banimento.</p>
+
+      <p><strong>Art. 8º – Segurança</strong><br>
+      I – Proibido enviar dados pessoais seus ou de terceiros.<br>
+      II – Proibido enviar links suspeitos.<br>
+      <strong>Penalidade:</strong> Advertência → Kick → Banimento.</p>
+
+      <p><strong>Art. 9º – Trapaças</strong><br>
+      I – Proibido uso de hacks, scripts e executores (Delta, KRNL, etc.).<br>
+      <strong>Penalidade:</strong> Banimento imediato.</p>
+
+      <h2>TÍTULO II – DAS DISPOSIÇÕES FINAIS</h2>
+
+      <p><strong>Art. 10 – Critérios de Aplicação</strong><br>
+      A staff pode ajustar penalidades conforme gravidade da infração.</p>
+
+    </div>
+
+  </main>
+
+  <script>
+    const menuIconTime = document.getElementById('menuIconTime');
+    const sideMenuTime = document.getElementById('sideMenuTime');
+    menuIconTime?.addEventListener('click', ()=> sideMenuTime.classList.toggle('open'));
+    document.addEventListener('click', (e)=> { 
+      if(!sideMenuTime.contains(e.target) && !menuIconTime.contains(e.target)) 
+        sideMenuTime.classList.remove('open'); 
+    });
+  </script>
+
+</body>
+</html>
